@@ -1,0 +1,60 @@
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Using a non-master branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Youcompleteme
+Plug 'valloric/youcompleteme'
+
+Plug 'vim-scripts/c.vim'
+Plug 'vim-scripts/bash-support.vim'
+
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'bling/vim-airline'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+
+" Initialize plugin system
+call plug#end()
+
+filetype plugin indent on
+syntax on
+
+set nu
+set cursorline
+" show existing tab with 2 spaces width
+set tabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
+
+let g:syntastic_go_checkers = ['go']
+
+set term=xterm-256color
