@@ -39,6 +39,7 @@ Plug 'bling/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 
 " Initialize plugin system
 call plug#end()
