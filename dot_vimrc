@@ -40,6 +40,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
