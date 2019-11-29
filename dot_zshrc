@@ -62,7 +62,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git autojump mvn go colored-man colorize composer docker docker-compose kubectl
+  git autojump mvn go colorize composer docker docker-compose kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,12 +93,12 @@ export EDITOR='vim'
 export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 
 # for go
+export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/workspace/Go
 export PATH=$PATH:$GOPATH/bin
 
 # for java
 export JAVAPATH=$HOME/workspace/Java
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
