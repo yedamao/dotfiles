@@ -30,17 +30,27 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'valloric/youcompleteme'
 
 Plug 'vim-scripts/c.vim'
+
 Plug 'vim-scripts/bash-support.vim'
 
 Plug 'tpope/vim-surround'
+
 Plug 'scrooloose/syntastic'
+
 Plug 'majutsushi/tagbar'
+
 Plug 'bling/vim-airline'
+
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-commentary'
+
 Plug 'tpope/vim-fugitive'
+
 Plug 'scrooloose/nerdcommenter'
+
 Plug 'airblade/vim-gitgutter'
+
+" content search depend ack
+Plug 'mileszs/ack.vim'
 
 " Initialize plugin system
 call plug#end()
