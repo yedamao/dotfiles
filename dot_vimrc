@@ -16,6 +16,8 @@ Plug 'junegunn/vim-easy-align'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" A plugin of NERDTree showing git status
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Using a non-master branch
 "Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
@@ -25,6 +27,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Youcompleteme
 Plug 'valloric/youcompleteme'
@@ -48,6 +51,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 
 Plug 'airblade/vim-gitgutter'
+
+Plug 'rhysd/git-messenger.vim'
+
 
 " content search depend ack
 Plug 'mileszs/ack.vim'
