@@ -2,9 +2,4 @@
 damao's dotfiles
 
 ## apply on machine
-```chezmoi init https://github.com/yedamao/dotfiles.git```
-
-```chezmoi apply```
-
-## PAC
-https://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
+```sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply yedamao```
