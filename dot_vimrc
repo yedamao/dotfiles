@@ -52,19 +52,12 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'rhysd/git-messenger.vim'
-
-
-" content search depend ack
-Plug 'mileszs/ack.vim'
-
 " Initialize plugin system
 call plug#end()
 
-filetype plugin indent on
-syntax on
 
-set nu
+" Basic Settings --- {{{
+set number
 set cursorline
 " show existing tab with 2 spaces width
 set tabstop=2
@@ -73,6 +66,32 @@ set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
-let g:syntastic_go_checkers = ['go']
+syntax on
+filetype plugin indent on
+" }}}
 
-set term=xterm-256color
+let mapleader = ","
+
+" Mappings  --- {{{
+" jk to exit insert mode
+inoremap <esc> <nop>
+inoremap jk <esc>
+" search
+nnoremap <c-f> :Files<cr>
+" }}}
+
+" Edit and reload $MYVIMRC --- {{{
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+augroup reloadVimrcGroup
+  autocmd!
+  autocmd BufWrite $MYVIMRC :echom "$MYVIMRC changed!"
+  autocmd BufWrite $MYVIMRC :source $MYVIMRC
+augroup END
+" }}}
+
+" Vimscript file settings --- {{{
+augroup filetype_vim
+ autocmd!
+ autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
