@@ -52,6 +52,8 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'airblade/vim-gitgutter'
 
+Plug 'yedamao/vim-dict'
+
 " Initialize plugin system
 call plug#end()
 
@@ -77,7 +79,8 @@ let mapleader = ","
 inoremap <esc> <nop>
 inoremap jk <esc>
 " search
-nnoremap <c-f> :Files<cr>
+nnoremap <leader>f :Files<cr>
+nnoremap <leader>g :exe "Ag " . expand("<cword>")<cr>
 " }}}
 
 " Edit and reload $MYVIMRC --- {{{
