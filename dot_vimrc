@@ -57,6 +57,10 @@ Plug 'yedamao/vim-dict'
 " Initialize plugin system
 call plug#end()
 
+"  Youcompleteme settings
+"  share gopls with vim-go
+let g:ycm_gopls_args = ['-remote=auto']
+let g:ycm_gopls_binary_path = [$GOPATH.'/gopls']
 
 " Basic Settings --- {{{
 set number
