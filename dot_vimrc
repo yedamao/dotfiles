@@ -52,7 +52,7 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'yedamao/vim-dict'
+Plug 'yedamao/vim-dict', { 'do': 'go install github.com/yedamao/dict@latest' }
 
 " Initialize plugin system
 call plug#end()
