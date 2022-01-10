@@ -50,6 +50,8 @@ Plug 'yedamao/vim-dict', { 'do': 'go install github.com/yedamao/dict@latest' }
 " Initialize plugin system
 call plug#end()
 
+let g:UltiSnipsExpandTrigger="<c-j>"
+
 "  Youcompleteme settings
 "  share gopls with vim-go
 let g:ycm_gopls_args = ['-remote=auto']
