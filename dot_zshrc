@@ -93,7 +93,7 @@ export EDITOR='vim'
 export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 
 # for go
-export PATH=$PATH:/usr/local/go/bin
+export PATH=/usr/local/go/bin:$PATH
 export GOPATH=$HOME/workspace/Go
 export PATH=$PATH:$GOPATH/bin
 
