@@ -23,7 +23,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Youcompleteme
-Plug 'valloric/youcompleteme', { 'do': './install.py --clang-completer --go-completer' }
+Plug 'valloric/youcompleteme', { 'do': './install.py --clangd-completer --go-completer' }
 
 Plug 'vim-scripts/c.vim'
 
