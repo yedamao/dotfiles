@@ -64,6 +64,7 @@ let g:ycm_gopls_binary_path = [$GOPATH.'/gopls']
 
 " Basic Settings --- {{{
 set relativenumber
+set number
 set cursorline
 " show existing tab with 2 spaces width
 set tabstop=2
