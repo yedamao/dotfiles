@@ -50,6 +50,8 @@ Plug 'yedamao/vim-dict', { 'branch': 'main', 'do': 'go install github.com/yedama
 
 Plug 'tpope/vim-obsession'
 
+Plug 'madox2/vim-ai', { 'do': './install.sh' }
+
 " Initialize plugin system
 call plug#end()
 
