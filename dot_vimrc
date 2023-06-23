@@ -53,8 +53,13 @@ Plug 'tpope/vim-obsession'
 
 Plug 'madox2/vim-ai', { 'do': './install.sh' }
 
+Plug 'jpalardy/vim-slime'
+
 " Initialize plugin system
 call plug#end()
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 let g:airline#extensions#obsession#enabled = 1
 
