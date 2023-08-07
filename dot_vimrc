@@ -55,6 +55,8 @@ Plug 'madox2/vim-ai', { 'do': './install.sh' }
 
 Plug 'jpalardy/vim-slime'
 
+Plug 'github/copilot.vim'
+
 " Initialize plugin system
 call plug#end()
 
