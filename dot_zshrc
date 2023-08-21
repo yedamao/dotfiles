@@ -117,7 +117,7 @@ export PATH=$PATH:~/.local/bin
 alias goproxy='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
 alias disproxy='unset http_proxy https_proxy'
 
-[ -f ~/.secret.zsh ] && source ~/.secret.zsh
+[ -f ~/.localrc.zsh ] && source ~/.localrc.zsh
 [ -f ~/.tools.zsh ] && source ~/.tools.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
