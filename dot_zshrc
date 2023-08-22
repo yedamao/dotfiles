@@ -113,7 +113,9 @@ export PATH=$PATH:~/.local/bin
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #proxy
-alias goproxy='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
+if ! alias goproxy >/dev/null 2>&1; then
+  alias goproxy='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
+fi
 alias disproxy='unset http_proxy https_proxy'
 
 [ -f ~/.tools.zsh ] && source ~/.tools.zsh
