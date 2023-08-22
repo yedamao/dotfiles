@@ -4,10 +4,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+[ -f ~/.localrc.zsh ] && source ~/.localrc.zsh
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME=${ZSH_THEME:-"random"}
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -90,9 +92,6 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# for mysql client
-export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
-
 # for go
 export PATH=/usr/local/go/bin:$PATH
 export GOPATH=$HOME/workspace/Go
@@ -117,7 +116,6 @@ export PATH=$PATH:~/.local/bin
 alias goproxy='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
 alias disproxy='unset http_proxy https_proxy'
 
-[ -f ~/.localrc.zsh ] && source ~/.localrc.zsh
 [ -f ~/.tools.zsh ] && source ~/.tools.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
