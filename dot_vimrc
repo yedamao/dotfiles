@@ -57,6 +57,8 @@ Plug 'jpalardy/vim-slime'
 
 Plug 'github/copilot.vim'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 " Initialize plugin system
 call plug#end()
 
