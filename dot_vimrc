@@ -91,7 +91,7 @@ let g:tagbar_type_yaml = {
 
 "  go debug settings
 nnoremap <leader>ds :GoDebugStart<cr>
-nnoremap <leader>dt :GoDebugStop<cr>
+nnoremap <leader>dp :GoDebugStop<cr>
 nnoremap <leader>db :GoDebugBreakpoint<cr>
 " }}}
 
