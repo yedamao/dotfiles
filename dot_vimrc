@@ -62,6 +62,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " Initialize plugin system
 call plug#end()
 
+let mapleader = ","
+
 " Plugin Settings --- {{{
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
@@ -86,6 +88,11 @@ let g:tagbar_type_yaml = {
     \ 'R:response',
   \ ],
   \}
+
+"  go debug settings
+nnoremap <leader>ds :GoDebugStart<cr>
+nnoremap <leader>dt :GoDebugStop<cr>
+nnoremap <leader>db :GoDebugBreakpoint<cr>
 " }}}
 
 " Basic Settings --- {{{
@@ -102,8 +109,6 @@ set encoding=UTF-8
 syntax on
 filetype plugin indent on
 " }}}
-
-let mapleader = ","
 
 " Mappings  --- {{{
 " jk to exit insert mode
