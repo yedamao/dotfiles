@@ -93,6 +93,19 @@ let g:tagbar_type_yaml = {
 nnoremap <leader>ds :GoDebugStart<cr>
 nnoremap <leader>dp :GoDebugStop<cr>
 nnoremap <leader>db :GoDebugBreakpoint<cr>
+
+let g:go_debug_mappings = {
+  \ '(go-debug-continue)': {'key': 'c', 'arguments': '<nowait>'},
+  \ '(go-debug-stop)': {'key': 'q'},
+  \ '(go-debug-next)': {'key': 'n', 'arguments': '<nowait>'},
+  \ '(go-debug-step)': {'key': 's'},
+\}
+
+let g:go_debug_windows = {
+  \ 'vars':       'leftabove 60vnew',
+  \ 'stack':      'leftabove 20new',
+  \ 'goroutines': 'botright 10new',
+\}
 " }}}
 
 " Basic Settings --- {{{
