@@ -59,6 +59,8 @@ Plug 'github/copilot.vim'
 
 Plug 'christoomey/vim-tmux-navigator'
 
+Plug 'ianding1/leetcode.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -69,6 +71,10 @@ let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 let g:airline#extensions#obsession#enabled = 1
+
+let g:leetcode_solution_filetype="golang"
+
+let g:leetcode_browser="chrome"
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 
