@@ -12,4 +12,4 @@ vim.opt.encoding = 'utf-8'
 vim.opt.syntax = 'on'
 
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "solarized-osaka"
