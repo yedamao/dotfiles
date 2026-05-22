@@ -61,6 +61,8 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'ianding1/leetcode.vim'
 
+Plug 'yedamao/vim-translator'
+
 " Initialize plugin system
 call plug#end()
 
@@ -77,6 +79,10 @@ let g:leetcode_solution_filetype="golang"
 let g:leetcode_browser="chrome"
 
 let g:UltiSnipsExpandTrigger="<c-j>"
+
+let g:translator_endpoint = 'https://api.minimaxi.com/anthropic/v1/messages'
+let g:translator_model = 'MiniMax-M2.7'
+let g:translator_output = 'replace'
 
 "  Youcompleteme settings
 "  share gopls with vim-go
