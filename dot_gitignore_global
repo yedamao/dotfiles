@@ -1,0 +1,9 @@
+# Vim
+Session.vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+.claude

@@ -72,6 +72,15 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 let g:airline#extensions#obsession#enabled = 1
 
+" Auto-restore Session.vim from cwd when vim starts with no file args
+augroup obsessionAutoLoad
+  autocmd!
+  autocmd VimEnter * nested
+        \ if !argc() && empty(v:this_session) && filereadable('Session.vim') && !&modified |
+        \   source Session.vim |
+        \ endif
+augroup END
+
 let g:leetcode_solution_filetype="golang"
 
 let g:leetcode_browser="chrome"
