@@ -153,6 +153,7 @@ inoremap jk <esc>
 " search
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>g :exe "Ag " . expand("<cword>")<cr>
+vnoremap <leader>g y:exe "Ag " . @"<cr>
 " }}}
 
 " Edit and reload $MYVIMRC --- {{{
